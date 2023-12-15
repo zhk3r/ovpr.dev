@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>ovpr.dev</title>
+    <link rel="stylesheet" type="text/css" href="demo-styling.css"> <!-- Linking external CSS file -->
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap'); /* Import JetBrains Mono font */
+
         body {
-            font-family: Arial, sans-serif; /* Minimalistic font */
+            font-family: 'JetBrains Mono', monospace; /* Set JetBrains Mono as the font */
             margin: 0; /* Remove default margin */
             height: 100vh; /* Full viewport height */
             display: flex; /* Enable flex container */
@@ -37,10 +40,8 @@
     <div class="content">
         <h1>ovpr.dev</h1>
         <p>Select a repository:</p>
-        <!-- Replace href with actual repository URLs -->
         <a href="https://github.com/zhk3r/check" class="repo-button">check</a>
         <a href="https://github.com/zhk3r/ovpr.dev" class="repo-button">website</a>
-        <!-- Add more buttons as needed -->
     </div>
 </body>
 </html>
