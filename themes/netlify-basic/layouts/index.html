@@ -6,8 +6,14 @@
     <style>
         body {
             font-family: Arial, sans-serif; /* Minimalistic font */
+            margin: 0; /* Remove default margin */
+            height: 100vh; /* Full viewport height */
+            display: flex; /* Enable flex container */
+            justify-content: center; /* Center content horizontally */
+            align-items: center; /* Center content vertically */
+        }
+        .content {
             text-align: center; /* Center align elements */
-            padding: 20px; /* Padding for aesthetic spacing */
         }
         .repo-button {
             display: inline-block;
@@ -28,11 +34,13 @@
     </style>
 </head>
 <body>
-    <h1>ovpr.dev</h1>
-    <p>Select a repository:</p>
-    <!-- Replace href with actual repository URLs -->
-    <a href="https://github.com/zhk3r/check" class="repo-button">check</a>
-    <a href="https://github.com/zhk3r/ovpr.dev" class="repo-button">website</a>
-    <!-- Add more buttons as needed -->
+    <div class="content">
+        <h1>ovpr.dev</h1>
+        <p>Select a repository:</p>
+        <!-- Replace href with actual repository URLs -->
+        <a href="https://github.com/zhk3r/check" class="repo-button">check</a>
+        <a href="https://github.com/zhk3r/ovpr.dev" class="repo-button">website</a>
+        <!-- Add more buttons as needed -->
+    </div>
 </body>
 </html>
