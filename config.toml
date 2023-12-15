@@ -1,4 +1,4 @@
-baseURL = 'http://hugo-quickstart-template.netlify.com'
+baseURL = 'https://ovpr.dev'
 languageCode = 'en-us'
-title = 'Netlify + Hugo Quickstart'
+title = 'ovpr.dev'
 theme = 'netlify-basic'
