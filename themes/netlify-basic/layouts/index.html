@@ -1,3 +1,9 @@
+
+CODAI
+updated_index.html
+
+html
+Copy code
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,10 +13,15 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
 
-        body {
-            font-family: 'JetBrains Mono', monospace;
-            background-color: #111;
-            color: #ccc; 
+        :root {
+            --main-family: 'JetBrains Mono', monospace;
+            --color-bg: #111; /* Crisp black background */
+            --color-text: #fff; /* White text color */
+        }
+        html, body {
+            background: var(--color-bg);
+            color: var(--color-text);
+            font-family: var(--main-family);
             margin: 0; /* Remove default margin */
             height: 100vh; /* Full viewport height */
             display: flex; /* Enable flex container */
@@ -18,7 +29,7 @@
             align-items: center; /* Center content vertically */
         }
         .content {
-            text-align: center; /* Center align elements */
+            text-align: center;
         }
         .repo-button {
             display: inline-block;
@@ -34,7 +45,7 @@
             transition: background-color 0.3s;
         }
         .repo-button:hover {
-            background-color: #e0e0e0;
+            background-color: #111;
         }
     </style>
 </head>
