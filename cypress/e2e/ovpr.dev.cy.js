@@ -10,11 +10,11 @@ describe('ovpr.dev', () => {
 
   it('has correct repository links', () => {
     // Test if the repository links are as expected
-    cy.get('a.repo-button') // Select all repository buttons
-      .should('have.attr', 'href') // Check if it has an href attribute
-      .then((hrefs) => {
-        expect(hrefs).to.include('https://github.com/zhk3r/ovpr.dev'); // Ensure the first href includes the correct URL
-        expect(hrefs).to.include('https://github.com/zhk3r/check'); // Ensure the second href includes the correct URL
-      });
+    cy.get('a.repo-button').each(($el) => { // Select all repository buttons and iterate
+      expect($el.prop('href')).to.satisfy(url => 
+        url.includes('https://github.com/zhk3r/check') || 
+        url.includes('https://github.com/zhk3r/ovpr.dev') // Check if href includes the correct URLs
+      );
+    });
   })
 })
