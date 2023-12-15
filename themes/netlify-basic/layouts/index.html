@@ -16,16 +16,15 @@
             background: var(--color-bg);
             color: var(--color-text);
             font-family: var(--main-family);
-            margin: 0; /* Remove default margin */
-            height: 100vh; /* Full viewport height */
-            display: flex; /* Enable flex container */
-            justify-content: center; /* Center content horizontally */
-            align-items: center; /* Center content vertically */
-            padding-bottom: 30vh; /* Adjust content to be 30% higher */
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .content {
             text-align: center;
-            font-size: 150%;
+            font-size: 125%;
         }
         .repo-button {
             display: inline-block;
@@ -38,10 +37,11 @@
             font-size: 16px;
             border-radius: 5px;
             cursor: pointer;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s, color 0.3s; /* Transition for color as well */
         }
         .repo-button:hover {
-            background-color: #111;
+            background-color: #111; /* Black background on hover */
+            color: #fff; /* White font color on hover */
         }
     </style>
 </head>
